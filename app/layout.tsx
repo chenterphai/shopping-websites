@@ -4,6 +4,8 @@ import "./globals.css";
 import HeaderTop from "./components/HeaderTop";
 import HeaderMain from "./components/HeaderMain";
 import Navbar from "./components/Navbar";
+import MobileNavbar from "./components/MobNavbar";
+import Footer from "./components/Footer";
 
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -26,7 +28,9 @@ export default function RootLayout({
         <HeaderTop />
         <HeaderMain />
         <Navbar />
+        <MobileNavbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
